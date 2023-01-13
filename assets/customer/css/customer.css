@@ -1,0 +1,55 @@
+* {padding: 0; margin: 0}
+img.road {
+    width: 200%;
+    position: relative;
+    top: 10px;
+}
+img.car {
+    width: 300px;
+    z-index: 1;
+    top: 100px;
+    position: relative;
+    animation-name: moveCar;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+img.motor {
+    width: 150px;
+    z-index: 1;
+    top: 150px;
+    position: relative;
+    animation-name: moveMotor;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+img.motor2 {
+    width: 50px;
+    z-index: 1;
+    top: 50px;
+    position: relative;
+    animation-name: moveMotor;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+@keyframes moveCar {
+    from {left: -1200px}
+    to   {left: 50%;}
+}
+@keyframes moveMotor {
+    from {left: 100%;}
+    to   {left: -1000px;}
+}
+
+.responsive img {
+    max-width:100%;
+    /*width:100%;*/
+    height: auto;
+}
+
